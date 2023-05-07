@@ -36,6 +36,7 @@ enum ApproachAxis
   Z
 };
 
+/** @brief Ik task structure */
 struct IkTask
 {
   /**
