@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pik_ros</name>
+  <version>0.0.0</version>
+  <description>Prioritized Inverse Kinematics ROS library</description>
+
+  <author email="ivo.vatavuk@fer.hr">Ivo Vatavuk</author>
+  <maintainer email="ivo.vatavuk@fer.hr" />
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
