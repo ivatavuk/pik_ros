@@ -3,14 +3,14 @@ name: Noetic
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - '**/README.md'
       - '**/*.rviz'
       - '**/*.png'
   pull_request:
     branches:
-      - main
+      - master
 
   # This workflow is triggered by a scheduled event that runs at 1 AM UTC every day.
   schedule:
