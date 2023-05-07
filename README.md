@@ -1,5 +1,5 @@
 # PIK ROS
-[![Noetic](https://github.com/ivatavuk/pik_ros/actions/workflows/noetic.yml/badge.svg)](https://ivatavuk/pik_ros/actions/workflows/noetic.yml)
+[![Noetic](https://github.com/ivatavuk/pik_ros/actions/workflows/noetic.yml/badge.svg)](https://github.com/ivatavuk/pik_ros/actions/workflows/noetic.yml)
 
 Prioritized Inverse Kinematics ROS library `pik_ros`.
 
