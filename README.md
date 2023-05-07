@@ -1,4 +1,4 @@
-# PIK ROS
+# Prioritized Inverse Kinematics ROS
 [![Noetic](https://github.com/ivatavuk/pik_ros/actions/workflows/noetic.yml/badge.svg)](https://github.com/ivatavuk/pik_ros/actions/workflows/noetic.yml)
 
 Prioritized Inverse Kinematics ROS library `pik_ros`.
@@ -62,12 +62,12 @@ find_package( catkin REQUIRED COMPONENTS
 
 And link the catkin libraries:
 ```cmake
-target_link_libraries(test_kinova_ik 
-                      ${catkin_LIBRARIES}
-                      ... )
+target_link_libraries( your_target_name 
+                       ${catkin_LIBRARIES}
+                       ... )
 ```
 
-For complete examples of usage of the library see [`kinova_gen3_pik_examples`](https://github.com/ivatavuk/kinova_gen3_pik_examples)
+For a complete usage example see [`kinova_gen3_pik_examples`](https://github.com/ivatavuk/kinova_gen3_pik_examples)
 
 ### Available Tasks
 Priorities are given to the solver as a vector of PikRos::IkTask objects, with descending priorities.
