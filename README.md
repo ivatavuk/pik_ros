@@ -11,8 +11,7 @@ In the image bellow you can see examples with following priorities:
  - `spraying_frame` approach axis orientation, shown with a blue arrow 
  - `forearm_link` position, shown with a purple sphere
 
-<img src="docs/pik_spraying_1.png" height="300">
-<img src="docs/pik_spraying_3.png" height="300">
+<img src="docs/pik_spraying_1.png" height="300"> <img src="docs/pik_spraying_3.png" height="300">
 
 PIK ROS solver uses sequential prioritized optimization, where [`PtscEigen`](https://github.com/ivatavuk/ptsc_eigen) is used for prioritized optimization, and [`MoveIt`](https://moveit.ros.org/) is used for the robot model data and Jacobian calculation. 
 
