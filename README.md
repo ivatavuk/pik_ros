@@ -5,13 +5,14 @@ Prioritized Inverse Kinematics ROS library `pik_ros`.
 
 The PIK solver gives a solution to the prioritized positional inverse kinematics problem: selecting joint positions that result in optimizing a number of prioritized tasks for different links in the kinematic chain.
 
-In the image bellow you can see an example with following priorities:
+In the image bellow you can see examples with following priorities:
 
  - `spraying_frame` position, shown with a blue sphere
  - `spraying_frame` approach axis orientation, shown with a blue arrow 
  - `forearm_link` position, shown with a purple sphere
 
-<img src="docs/pik_spraying.png" width="700">
+<img src="docs/pik_spraying_1.png" height="300">
+<img src="docs/pik_spraying_3.png" height="300">
 
 PIK ROS solver uses sequential prioritized optimization, where [`PtscEigen`](https://github.com/ivatavuk/ptsc_eigen) is used for prioritized optimization, and [`MoveIt`](https://moveit.ros.org/) is used for the robot model data and Jacobian calculation. 
 
