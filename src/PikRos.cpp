@@ -77,10 +77,10 @@ void Gradient::updateGradient(double current_value)
 double Gradient::getGradient() const { return gradient_; };
 
 //-------------------Pik-------------------
-Pik::Pik( ros::NodeHandle &nh_, const std::string &robot_name, 
+Pik::Pik( ros::NodeHandle &nh, const std::string &robot_name, 
           const std::string &joint_model_group_name, 
           const Settings &settings ) 
-: moveit_wrapper_(nh_, robot_name, joint_model_group_name), 
+: moveit_wrapper_(nh, robot_name, joint_model_group_name), 
   settings_(settings), n_dof_(moveit_wrapper_.getNDof()) 
 {}
 

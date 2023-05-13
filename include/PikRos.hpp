@@ -100,12 +100,12 @@ class Pik
 public:
   /**
    * @brief Construct a new Pik object
-   * @param nh_ ROS node handle
+   * @param nh ROS node handle
    * @param robot_name Namespace for robot description 
    * @param joint_model_group_name Joint model group name in MoveIt
    * @param settings PikRos::Settings object
    */
-  Pik(ros::NodeHandle &nh_, const std::string &robot_name, 
+  Pik(ros::NodeHandle &nh, const std::string &robot_name, 
       const std::string &joint_model_group_name,
       const Settings &settings = Settings());
 
