@@ -1,4 +1,4 @@
-name: Noetic
+name: Noetic Build
 
 on:
   push:
@@ -36,8 +36,8 @@ jobs:
         with:
           required-ros-distributions: noetic
 
-      - name: Install
-        run: ./.ci/ci_before_install.sh
+      - name: Install Dependencies
+        run: ./.ci/ci_install_dependencies.sh
 
       - name: Build
         run: ./.ci/ci_test_build.sh
