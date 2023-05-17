@@ -14,8 +14,7 @@ find_package( catkin REQUIRED COMPONENTS
               roscpp rospy std_msgs 
               moveit_core
               moveit_ros_planning
-              moveit_ros_planning_interface
-              moveit_ros_perception )
+              moveit_ros_planning_interface )
 
 # pik_ros Library
 set(LIBRARY_TARGET_NAME pik_ros)
@@ -24,7 +23,11 @@ set(LIBRARY_VERSION 0.0)
 catkin_package( INCLUDE_DIRS include
                 LIBRARIES ${LIBRARY_TARGET_NAME}
                 DEPENDS
-                EIGEN3 )
+                EIGEN3 
+                CATKIN_DEPENDS
+                moveit_core
+                moveit_ros_planning
+                moveit_ros_planning_interface )
 
 include_directories(include
   ${catkin_INCLUDE_DIRS}
