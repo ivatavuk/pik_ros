@@ -164,7 +164,7 @@ Eigen::MatrixXd Pik::getTaskJacobian( const Eigen::VectorXd &q, IkTask task ) co
     Eigen::Quaterniond tool_quaternion = vec2quat( getTaskValue(q, task) );
     auto base_jacobian = moveit_wrapper_.getJacobian(task.frame_name, q, false).block(3, 0, 3, n_dof_);
     //rotate jacobian to local axis
-    return (tool_quaternion.toRotationMatrix().inverse() * base_jacobian).block(0, 0, 2, n_dof_);  
+    return (tool_quaternion.toRotationMatrix().transpose() * base_jacobian).block(0, 0, 2, n_dof_);  
   }
 
   ROS_FATAL("PrioritizedIK::getTaskJacobian => task type unrecognized!");
@@ -236,7 +236,7 @@ Eigen::VectorXd Pik::getTaskError( const Eigen::VectorXd &q, IkTask task, bool c
 
     Eigen::Vector3d err_axis = current_approach_vector.cross(desired_approach_vector).normalized();
 
-    Eigen::Vector3d local_err_3d = tool_quaternion.toRotationMatrix().inverse() * (err_angle * err_axis);
+    Eigen::Vector3d local_err_3d = tool_quaternion.toRotationMatrix().transpose() * (err_angle * err_axis);
     return Eigen::Vector2d(local_err_3d.x(), local_err_3d.y());
   }
   ROS_FATAL("PrioritizedIK::getTaskError => task type unrecognized!");
