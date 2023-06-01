@@ -3,7 +3,7 @@ set -e
 
 #Build and install osqp
 cd
-git clone --recursive https://github.com/osqp/osqp
+git clone --recursive --branch release-0.6.3 https://github.com/osqp/osqp
 cd osqp
 mkdir build
 cd build
