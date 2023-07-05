@@ -81,7 +81,20 @@ PikRos::IkTaskType describes a particular task type given to the solver. Availab
 
 ## Citing 
 
-TODO
+If you use this code in a scholarly work, please consider citing our [`paper`](https://arxiv.org/pdf/2307.00302.pdf):
+
+```
+@misc{https://doi.org/10.48550/arxiv.2307.00302,
+  doi = {10.48550/ARXIV.2307.00302},
+  url = {https://arxiv.org/abs/2307.00302},
+  author = {Vatavuk,  Ivo and Kovačić,  Zdenko},
+  keywords = {Robotics (cs.RO),  FOS: Computer and information sciences,  FOS: Computer and information sciences},
+  title = {Constrained Prioritized 3T2R Task Control for Robotic Agricultural Spraying},
+  publisher = {arXiv},
+  year = {2023},
+  copyright = {arXiv.org perpetual,  non-exclusive license}
+}
+```
 
 ## 📝 License
 
